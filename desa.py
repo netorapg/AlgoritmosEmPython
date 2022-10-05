@@ -38,7 +38,7 @@ def busca(v1):
 
 
 def ordenar(v1, met):
-    if(met == "bolha"):
+    if(met == "bolha".upper()):
         for ciclos in range(0, len(v1)-1):
             for i in range(0, len(v1)-1):
                 if(v1[i] > v1[i+1]):
@@ -49,7 +49,7 @@ def ordenar(v1, met):
             print(v1[i])
 
     
-    if(met == "inserção"):
+    if(met == "inserção".upper()):
         for i in range(1, len(v1)):
             valor = v1[i]
             anterior = i-1
@@ -62,7 +62,7 @@ def ordenar(v1, met):
         for i in range (0, len(v1)):
             print(v1[i])
         
-    if(met == "seleção"):
+    if(met == "seleção".upper()):
         for i in range(0, len(v1)-1):
             v_menor = v1[i]
             i_menor = i 
